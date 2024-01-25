@@ -1,0 +1,15 @@
+.prebel-components-0-x-containerLayout--image-with-html__container-danger .prebel-components-0-x-containerSection{
+width: 100%;
+height: 468px;
+}
+.prebel-components-0-x-containerLayout .prebel-components-0-x-containerLayout--image-with-html__container{
+height: 468px;
+}
+.prebel-components-0-x-containerLayout--search-page__header--container{
+    position: relative;
+}   
+@media (max-width: 768px) { 
+    .prebel-components-0-x-cardLayout--search-page__header--brands-images {
+        min-width: 100px;
+    }
+}

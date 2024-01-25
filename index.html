@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="files/ruletastyle.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body> 
+    <div id="carouselMain" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="position-relative">
+                <div class="vara"></div>
+                <div>
+                    <img src="imagenes/ruleta.png" id="ruleta">
+                </div>
+                <div>
+                    <div id="sonido" style="display: none;">
+                    <iframe src="files/ruleta.mp3" id="audio"></iframe>                
+                    </div>
+                </div>
+                </div>
+        </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/CUPON-1.png" media="(max-width: 768px)" />
+                        <img src="imagenes/CUPON-1.png" alt="fondo desk" class="img-fluid" />
+                            <a class="clase1" onclick="goToStep(0);popError();">
+                            </a>
+                            <a class="clase2" onclick="goToStep(0);popError();">
+                            </a>
+                            <a class="clase3" onclick="goToStepTrue(0)" id="verdadera">
+                            </a>
+                            <a class="clase4" onclick="goToStep(0);popError();">
+                            </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/CUPON-2.png" media="(max-width: 768px)" />
+                        <img src="imagenes/CUPON-2.png" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                        </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/CUPON-3.png" media="(max-width: 768px)" />
+                        <img src="imagenes/CUPON-3.png" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/CUPON-4.png" media="(max-width: 768px)" />
+                        <img src="imagenes/CUPON-4.png" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                    <div class="position-relative">
+                        <picture>
+                            <source srcset="imagenes/CUPON-5.png" media="(max-width: 768px)" />
+                            <img src="imagenes/CUPON-5.png" alt="fondo desk" class="img-fluid" />
+                            <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                            </a>
+                            <a class="clase2" onclick="goToStep(0);popError();">
+                            </a>
+                            <a class="clase3" onclick="goToStep(0);popError();">
+                            </a>
+                            <a class="clase4" onclick="goToStep(0);popError();">
+                            </a>
+                        </picture>
+                    </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/CUPON-6.png" media="(max-width: 768px)" />
+                        <img src="imagenes/CUPON-6.png" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/CUPON-7.png" media="(max-width: 768px)" />
+                        <img src="imagenes/CUPON-7.png" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/CUPON-8.png" media="(max-width: 768px)" />
+                        <img src="imagenes/CUPON-8.png" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/ciencia1mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/ciencia1.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/ciencia2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/ciencia2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>  
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/ciencia3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/ciencia3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/ciencia4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/ciencia4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/entretenimiento1mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/entretenimiento1.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/entretenimiento2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/entretenimiento2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>    
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/entretenimiento3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/entretenimiento3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/entretenimiento4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/entretenimiento4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/historia1mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/historia1.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/historia2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/historia2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/historia3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/historia3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/historia4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/historia4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/geografia1mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/geografia1.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div> 
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/geografia2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/geografia2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>    
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/geografia3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/geografia3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0);popError();">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item desk">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/geografia4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/geografia4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0);popError();">
+                        </a>
+                        <a class="clase4" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+
+
+
+            <!--<div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/deporte1mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/deporte1.jpg" alt="fondo desk" class="img-fluid" />
+                            <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                            </a>
+                            <a class="clase2" onclick="goToStep(0)">
+                            </a>
+                            <a class="clase3" onclick="goToStep(0)">
+                            </a>
+                            <a class="clase4" onclick="goToStep(0)">
+                            </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/deporte2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/deporte2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                        </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/deporte3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/deporte3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/deporte4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/deporte4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                    <div class="position-relative">
+                        <picture>
+                            <source srcset="imagenes/arte1mob.jpg" media="(max-width: 768px)" />
+                            <img src="imagenes/arte1.jpg" alt="fondo desk" class="img-fluid" />
+                            <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                            </a>
+                            <a class="clase2" onclick="goToStep(0)">
+                            </a>
+                            <a class="clase3" onclick="goToStep(0)">
+                            </a>
+                            <a class="clase4" onclick="goToStep(0)">
+                            </a>
+                        </picture>
+                    </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/arte2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/arte2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/arte3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/arte3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/arte4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/arte4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/ciencia1mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/ciencia1.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/ciencia2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/ciencia2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>  
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/ciencia3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/ciencia3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/ciencia4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/ciencia4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/entretenimiento1mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/entretenimiento1.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/entretenimiento2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/entretenimiento2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>    
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/entretenimiento3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/entretenimiento3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/entretenimiento4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/entretenimiento4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/historia1mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/historia1.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/historia2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/historia2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/historia3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/historia3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/historia4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/historia4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/geografia1mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/geografia1.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div> 
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/geografia2mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/geografia2.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>    
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/geografia3mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/geografia3.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>
+            <div class="carousel-item mob">
+                <div class="position-relative">
+                    <picture>
+                        <source srcset="imagenes/geografia4mob.jpg" media="(max-width: 768px)" />
+                        <img src="imagenes/geografia4.jpg" alt="fondo desk" class="img-fluid" />
+                        <a class="clase1" onclick="goToStepTrue(0)" id="verdadera">
+                        </a>
+                        <a class="clase2" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase3" onclick="goToStep(0)">
+                        </a>
+                        <a class="clase4" onclick="goToStep(0)">
+                        </a>
+                    </picture>
+                </div>
+            </div>-->
+        
+        
+        
+        </div> 
+        <!--<video autoplay muted loop width="100%"><source src=""></video>-->                   
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="files/preguntadosnew.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>
