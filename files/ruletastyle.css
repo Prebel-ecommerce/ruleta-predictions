@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    text-align: center;
+}
+
+.swal2-styled.swal2-cancel a {
+    color: #fff !important;
+}
+#ruleta{
+    max-width: 100%;
+}
+.swal2-popup {
+    padding: 0% !important;
+}
+.swal2-content {
+    padding: 0% !important;
+}
+.swal2-actions {
+    margin: 0% !important;
+}
+.vara {
+    height: 20px;
+    width: 15px;
+    background-color: #aaa;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    border-radius: 0px 0px 8px 8px;
+    border: 1px solid #000;
+    border-top: 5px solid #000;
+    z-index: 1000;
+}
+
+img {
+    z-index: 100;
+    transition: all 5s;
+}
+
+#premio {  
+    color: #f1b7ff;
+    position: absolute;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 20px;
+}
+
+td{
+    background-color: #ffffff00 !important;
+    border: 0 !important;
+}
+
+.clase1{	
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    width: 37%;
+    height: 14%;
+    cursor: pointer
+}
+.clase2{
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    width: 37%;
+    height: 14%;
+    cursor: pointer;
+}
+.clase3{
+    position: absolute;
+    top: 70%;
+    left: 12%;
+    width: 37%;
+    height: 14%;
+    cursor: pointer;
+}
+.clase4{
+    position: absolute;
+    top: 70%;
+    right: 12%;
+    width: 37%;
+    height: 14%;
+    cursor: pointer;
+}
+/*.desk{
+    display: block;
+}
+.mob{
+    display: none;
+}*/
+@media (max-width: 768px) {  
+    /*.desk{
+        display: none!important;
+    }  
+    .mob{
+        display: block;
+    }*/
+    .clase1{
+    position: absolute;
+    top: 27%;
+    left: 17%;
+    width: 66%;
+    height: 9%;
+    cursor: pointer;
+    }
+    .clase2{
+    position: absolute;
+    top: 41%;
+    left: 17%;
+    width: 66%;
+    height: 9%;
+    cursor: pointer;
+    }
+    .clase3{
+    position: absolute;
+    top: 54%;
+    left: 17%;
+    width: 66%;
+    height: 9%;
+    cursor: pointer;
+    }
+    .clase4{
+    position: absolute;
+    top:67%;
+    left: 17%;
+    width: 66%;
+    height: 9%;
+    cursor: pointer;
+    }
+    #premio {  
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        font-size: 26px;
+    }
+    td{
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    p{
+        padding: 0px !important ;
+        margin: 0px !important;
+    }
+}
+.swal2-popup {
+    width: 40em!important;
+}
+.swal2-styled.swal2-confirm {
+    background-color: #FFA9BE!important;
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid #FFA9BE!important;
+}
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+    background-color: #FFA9BE!important;
+}
+
+
